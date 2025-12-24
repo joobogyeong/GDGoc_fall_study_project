@@ -10,7 +10,7 @@ build/
 .classpath
 .factorypath
 .project
-.settings
+.settingsgit
 .springBeans
 .sts4-cache
 bin/
