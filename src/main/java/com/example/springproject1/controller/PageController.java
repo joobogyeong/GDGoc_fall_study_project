@@ -1,6 +1,10 @@
 package com.example.springproject1.controller;
 
+
+import jakarta.servlet.http.HttpServletRequest;
+import org.springframework.security.web.csrf.CsrfToken;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
@@ -11,7 +15,10 @@ public class PageController {
     }
 
     @GetMapping("/register")
-    public String registerPage() {
+    public String registerPage(HttpServletRequest request.org.springframework.ui.Model model) {
+
+        CsrfToken csrfToken = (CsrfToken) request.getAttribute(CsrfToken.class.getName());
+        model.addattribute("_csrf",csrfToken);
         return "register/index";
     }
 
