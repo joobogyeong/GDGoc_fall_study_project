@@ -3,13 +3,40 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>로그인페이지</title>
+    <title>회원가입페이지</title>
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/register/style.css">
 </head>
 <body>
-<%@include file="../common/header.jsp"%>
-<div>
-    <h2>회원가입 페이지</h2>
+<%@include file="../common/header.jsp" %>
+<div id="register-container-wrapper">
+    <div id="register-container">
+        <h2>회원가입</h2>
+        <form action="${pageContext_request.contextPath}/register" method="post">
+            <div class="input-group">
+                <label for="username" name="username">아이디</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password" name="password">비밀번호</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="input-group">
+                <label for="writer" name="writer">작성자</label>
+                <input type="text" id="writer" name="writer" required>
+            </div>
+
+            <div class="input-group">
+                <button type="submit" class="register-button">회원가입</button>
+            </div>
+            <div>
+                <div class="login-link">
+                    <a href="${pageContext.request.contextPath}/loginPage">이미 계정이 있으신가요?</a>
+                </div>
+            </div>
+        </form>
+    </div>
+
 </div>
-<%@ include file="../common/footer.jsp"%>
+<%@ include file="../common/footer.jsp" %>
 </body>
 </html>
