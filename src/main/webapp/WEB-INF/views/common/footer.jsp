@@ -8,7 +8,7 @@
 <body>
 
 <div id="footer">
-    <div style="color:white; text-align: left; float:left; ">
+    <div>
         2025 gdg study footer GDG on HUFS
     </div>
 </div>
