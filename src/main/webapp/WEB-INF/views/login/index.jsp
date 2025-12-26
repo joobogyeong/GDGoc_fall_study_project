@@ -4,10 +4,11 @@
 <head>
     <meta charset="utf-8">
     <title>로그인페이지</title>
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/login/style.css">
 </head>
 <body>
 <%@include file="../common/header.jsp"%>
-<div id="login-container-wapper">
+<div id="login-container-wrapper">
     <div id="login-container">
         <h2>로그인</h2>
         <form action="${pageContext.request.contextPath}/login" method="post">
