@@ -21,5 +21,7 @@
     </div>
 </div>
 <%@ include file="common/footer.jsp"%>
+
+<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/script.js"></script>
 </body>
 </html>

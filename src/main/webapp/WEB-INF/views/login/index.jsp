@@ -1,4 +1,5 @@
 <%@page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,6 +12,10 @@
 <div id="login-container-wrapper">
     <div id="login-container">
         <h2>로그인</h2>
+        <!--로그인 실패 시 오류 메시지 -->
+        <c:if test="${not empty param.error}">
+            <p style="color:red;">아이디 또는 비밀번호가 잘못되었습니다.</p>
+        </c:if>
         <form action="${pageContext.request.contextPath}/login" method="post">
             <div class="input-group">
                 <label for="username">아이디</label>

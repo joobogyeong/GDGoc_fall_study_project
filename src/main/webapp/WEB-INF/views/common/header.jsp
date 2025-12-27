@@ -9,7 +9,7 @@
 <body>
 
 <div id="header">
-    <div style="color:white; text-align: left; float:left; ">
+    <div style="color:white; text-align: left; float:left; cursor: pointer" onclick="location.href=${pageContext.request.contextPath}`/`">
         gdg study header
     </div>
     <c:choose>
