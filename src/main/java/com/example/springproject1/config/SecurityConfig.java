@@ -77,7 +77,7 @@ public class SecurityConfig {
                     session.setAttribute("MANAGER",true);
                 }
                 session.setAttribute("username",authentication.getName());
-                session.setAttribute("isAuthentication",true);
+                session.setAttribute("isAuthenticated",true);
 
                 response.sendRedirect(request.getContextPath()+"/");
 

@@ -15,15 +15,16 @@ public class PageController {
     }
 
     @GetMapping("/register")
-    public String registerPage(HttpServletRequest request.org.springframework.ui.Model model) {
+    public String registerPage(HttpServletRequest request,org.springframework.ui.Model model) {
 
         CsrfToken csrfToken = (CsrfToken) request.getAttribute(CsrfToken.class.getName());
-        model.addattribute("_csrf",csrfToken);
+        model.addAttribute("_csrf",csrfToken);
         return "register/index";
     }
 
-    @GetMapping("loginPage")
-    public String loginPage() {
+    public String loginPage(HttpServletRequest request,org.springframework.ui.Model model) {
+        CsrfToken csrfToken = (CsrfToken) request.getAttribute(CsrfToken.class.getName());
+        model.addAttribute("_csrf",csrfToken);
         return "login/index";
     }
 }
