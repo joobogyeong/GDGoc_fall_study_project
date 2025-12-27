@@ -9,8 +9,7 @@ import org.apache.ibatis.annotations.Select;
 
 public interface UserMapper {
     // CRUD의 CREATE에 해당하는 기능중하나
-    @Insert("INSERT INTO backend_spring_project.user(username,password,writer,role)
-    VALUES(#{username},#{password},#{writer},#{role})")
+    @Insert("INSERT INTO backend_spring_project.user(username,password,writer,role) VALUES(#{username},#{password},#{writer},#{role})")
 
     void insertUser(User user);
 
@@ -18,8 +17,7 @@ public interface UserMapper {
     // 가져오는게 없기 때문에 void로 가져오는게 없다고 작성한다.
 
     // CRUD의 READ에 해당하는 기능중하나
-    @Select("SELECT username,password,writer,role FROM backend_spring_project.user
-    WHERE username =#{username}")
+    @Select("SELECT username,password,writer,role FROM backend_spring_project.userWHERE username =#{username}")
 
     User findByUsername(String username);
 
