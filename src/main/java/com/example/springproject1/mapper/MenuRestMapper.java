@@ -8,11 +8,11 @@ import java.util.List;
 
 @Mapper
 public interface MenuRestMapper {
-    @Select()
+    @Select("select idx, memID, title, content, writer, indate, count FROM backend_spring_project.menu ORDER BY idx DESC ")
     public List<Menu> getLists();
-    @Insert()
+    @Insert("INSERT INTO backend_spring_project.menu(memID, title, content, writer, indate) VALUES (#{memID},#{title},#{content},#{writer},#{indate})")
     public void boardInsert(Menu menu);
-    @Select()
+    @Select("select idx, memID, title, content, writer, indate, count FROM backend_spring_project.menu WHERE idx=${idx}")
     public Menu boardContent(int idx);
     @Delete("delete from backend_spring_project.menu where idx=#{idx}")
     public void boardDelete(int idx);
