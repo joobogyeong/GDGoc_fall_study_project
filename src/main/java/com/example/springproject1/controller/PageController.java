@@ -1,6 +1,8 @@
 package com.example.springproject1.controller;
 
 
+import com.example.springproject1.entity.Menu;
+import com.example.springproject1.service.MenuRestService;
 import com.example.springproject1.service.UserService;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,9 +11,13 @@ import org.springframework.security.web.csrf.CsrfToken;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class PageController {
+    @Autowired
+    private MenuRestService menuRestService;
     @Autowired
     private UserService userService;
 
@@ -38,5 +44,11 @@ public class PageController {
         String writer = userService.findWriter(authentication.getName());
         model.addAttribute("writer");
         return "noticeAdd/index";
+    }
+    @GetMapping("/noticeCheckPage")
+    public String noticeCheckPage(@RequestParam("idx")int idx,Model model){
+        Menu menu = menuRestService.boardContent((idx));
+        model.addAttribute("menu",menu);
+        return "noticeCheck/index";
     }
 }
