@@ -1,5 +1,5 @@
 GDGoc fall study (spring full stack project )
-========
+---
 
 자바 기반 풀스택 개발자 양성과정의 개인 프로젝트.
 
@@ -13,7 +13,6 @@ GDGoc fall study (spring full stack project )
 3. [프로젝트 수행과정 및 결과](#3-프로젝트-수행과정-및-결과)
 4. [프로젝트 후기](#4-프로젝트-후기)
 
----
 
 ## 1. 프로젝트 개요
 
@@ -31,7 +30,6 @@ GDGoc fall study (spring full stack project )
 - 게시판(CRUD) 개발
 - 로그인/로그아웃 및 회원가입 기능 구현
 
----
 
 ## 2. 프로젝트 구성
 
@@ -48,7 +46,6 @@ GDGoc fall study (spring full stack project )
 | IDE | Intellij, MySQL Workbench |
 | Collaboration | GitHub, Notion |
 
----
 
 ## API 명세서
 
@@ -61,16 +58,15 @@ GDGoc fall study (spring full stack project )
 | PUT | /menu/update/{idx} | 메뉴 수정 |
 | PUT | /menu/count/{idx} | 조회수 증가 |
 
----
 
 ## 3. 프로젝트 수행과정 및 결과
 - 수행과정: 
 - 결과: 
 
----
 
 ## 4. 프로젝트 후기
 - 후시: 
+
 
 
 
