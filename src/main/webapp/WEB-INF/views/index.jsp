@@ -7,7 +7,7 @@
     <meta name="_csrf" content="${_csrf.token}">
     <meta name="_csrf_header" content="${_csrf.headerName}">
     <title>GDGoc_fall_study</title>
-    <link rel="stylesheet" type="text/css" href="${PageContext.request.contextPath}/resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/style.css">
 </head>
 <body>
 <%@ include file="common/header.jsp"%>
@@ -15,7 +15,7 @@
     <div id="menuAdmin">
         <h2 id="menuAdminH2">공지사항</h2>
         <c:if test="${MANAGER == true}">
-            <button type="button" onclick="location.href=`${pageContext.request.contextPath}/noticeAdd  `"></button>
+            <button type="button" onclick="location.href=`${pageContext.request.contextPath}/noticeAddPage`"></button>
         </c:if>
         <div id="menuList">
 
