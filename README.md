@@ -1,13 +1,11 @@
-GDGoc fall study 
+GDGoc fall study (spring full stack project )
 ========
-spring full stack project 
-========
-# 카네스블랙 카페
 
-자바 기반 풀스택 개발자 양성과정의 개인 프로젝트입니다.
+자바 기반 풀스택 개발자 양성과정의 개인 프로젝트.
 
-- **프로젝트 기간**: 2024.10.10 ~ 2024.10.13  
-- **개발자**: 블랙강사 (개인프로젝트)
+- **프로젝트 기간**: 2025.10.4 ~ 2026.1.3  
+- **개발자**: 주보경 (개인프로젝트)
+- **수업 자료**: 인프런 
 
 ## 목차
 1. [프로젝트 개요](#1-프로젝트-개요)
@@ -24,10 +22,8 @@ spring full stack project
 - 스프링 시큐리티를 통한 인증 및 인가 과정 구현
 - XSS 공격 방지, CSRF 방지 등 기본적인 보안 처리 해결방법 제시
 
-### 서비스 대상
-- 블랙강사의 수업을 듣고자 하는 학생들
 
-### 담당 업무
+### 구현 기능
 - Spring Security 구현
 - API 설계
 - DB 설계
@@ -49,20 +45,8 @@ spring full stack project
 | Testing | Swagger |
 | Frontend | HTML5, CSS3, JavaScript |
 | Backend | Spring Boot (v3.3.3), Java (OpenJDK-23) |
-| IDE | Visual Studio Code, Eclipse |
+| IDE | Intellij, MySQL Workbench |
 | Collaboration | GitHub, Notion |
-
-### 시스템 아키텍처
-- (이미지 생략)
-
-### 시퀀스 다이어그램
-- (이미지 생략)
-
-### 데이터베이스 구조
-- (이미지 생략)
-
-### API 설계
-- (이미지 생략)
 
 ---
 
@@ -80,13 +64,14 @@ spring full stack project
 ---
 
 ## 3. 프로젝트 수행과정 및 결과
-- 수행과정: 개인프로젝트의 개발기간 1일소요.
-- 결과: 칭찬할만한점: ~~ 개선해야할점: JWT토큰추가필요,댓글기능추가
+- 수행과정: 
+- 결과: 
 
 ---
 
 ## 4. 프로젝트 후기
-- ~~ 앞으로의 여러분이 팀프로젝트 어떤부분에 어떤식으로 커뮤니케이션을 진행할것인지 이번기회에 배웠다.(개선방안)
+- 후시: 
+
 
 
 
