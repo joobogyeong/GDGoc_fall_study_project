@@ -1,3 +1,7 @@
+<center>
+<img width="536" height="130" alt="image" src="https://github.com/user-attachments/assets/70fef744-7014-4cc6-85f6-eea567ce8a38" />
+</center>
+
 ### GDGoc fall study ( spring full stack project ) 
 
 ---
@@ -67,6 +71,7 @@
 
 ## 4. 프로젝트 후기
 - 후기: 기본적인 spring boot에서의 코드 흐름 (mapper, service, controller)을 정확하게 코드로 쳐보면서 점검할 수 있는 아주 좋은 프로젝트였다. 뿐만아니라 실제 db까지 설계해 보고 회원가입 과정을 살펴보았고, swagger 문서의 설정 과정을 알 수 있었으며 배포하는 과정에서 AWS를 처음 접해보는 좋은 경험이었다.
+
 
 
 
